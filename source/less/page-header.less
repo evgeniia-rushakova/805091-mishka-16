@@ -1,11 +1,14 @@
 .page-header {
   background-color:white;
-  height:79px;
-display:flex;
+  min-height:79px;
+}
+.page-header__logo {
+  display: block;
+      margin-bottom: 32px;
 }
 .page-header__logo-image {
-  margin-top:14px;
-  padding-left:108px;
+  margin-top:22px;
+  padding-left:116px;
 }
 .main-nav__toggle {
 border:none;
@@ -13,8 +16,41 @@ background-color:white;
 margin-top: 24px;
 margin-left: 61px;
 }
-.main-nav__wrapper {
+/*.main-nav__wrapper {
   display:none;
+}*/
+.main-nav__list {
+margin:0;
+padding:0;
+}
+.site-list__item {
+list-style: none;
+box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
+}
+
+.site-list__item a {
+ text-decoration: none;
+  .bold;
+ line-height: 24px;
+  display: block;
+
+ padding-bottom: 27px;
+ padding-left: 76px;
+ padding-top:30px;
+}
+.user-list__item {
+list-style: none;
+box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
+}
+.user-list__item a {
+ text-decoration: none;
+ .bold;
+ line-height: 24px;
+ display: block;
+
+ padding-bottom: 29px;
+ padding-left: 76px;
+ padding-top: 25px;
 }
 .main-nav__toggle:hover {
   opacity:0.6;
