@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,24 +14,24 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Открыть меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__search" href="#">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__bucket" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <!--<div class="main-nav__wrapper">-->
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__bucket" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <!--</div>-->
       </nav>
     </header>
     <main class="page-main">
@@ -109,7 +111,6 @@
           <div class="reviews__toggles slider__toggles">
             <button type="button" class="button slider__toggles__prev" alt="Предыдущий отзыв"></button>
             <button type="button" class="button slider__toggles__next" alt="Следующий отзыв"></button>
-
           </div>
           <a class="button reviews__toggles__send"  href="#">Написать</a>
         </div>
@@ -133,7 +134,7 @@
       </section>
       <a class=" button contacts__feedback-button"  href="#">НАПИШИТЕ НАМ</a>
     </main>
-        <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -152,7 +153,5 @@
         <a class="button copyright__img" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
-
   </body>
-
 </html>
