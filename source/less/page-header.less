@@ -9,17 +9,16 @@
 }
 
 .page-header__logo-image {
-  margin-top: 22px;
   padding-left: 116px;
 }
 
 .main-nav {
-  min-height: 316px; //временно для сетки
+  display: flex;
 }
 
 .main-nav__toggle {
   border: none;
-  background-color: white;
+  background-color: transparent;
   margin-top: 24px;
   margin-left: 61px;
 
@@ -32,18 +31,10 @@
   }
 }
 
-.main-nav__toggle:hover .main.nav__wrapper {
-  display: block;
-}
-
-
-/*.main-nav__wrapper {
-  display:none;
-}*/
-
 .main-nav__list {
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .site-list__item {
@@ -57,8 +48,18 @@
   line-height: 24px;
   display: block;
   padding-bottom: 27px;
-  padding-left: 76px;
+  padding-left: 35px;
   padding-top: 30px;
+  padding-right: 15px;
+}
+
+.additional-list a{
+  text-decoration: none;
+  padding: 24px 50px;
+}
+
+.additional-list__item {
+  display: none;
 }
 
 .user-list__item {
@@ -78,17 +79,29 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    //width: auto;
+    //display: flex;
+    //justify-content: space-between;
+    //padding-left: 50px;
+    //padding-right: 50px;
+
   }
 
   .main-nav {
     min-height: 88px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: block;
+  }
+
+  .page-header__logo {
+    margin-bottom: 0;
+    margin-left: 50px;
   }
 
   .page-header__logo-image {
@@ -99,7 +112,6 @@
     height: 46px;
     padding-left: 112px;
     box-sizing: border-box;
-    margin-right: 204px;
   }
 
   .main-nav__toggle {
@@ -114,10 +126,29 @@
     display: flex;
   }
 
+  .site-list__item {
+    border:none;
+  }
+
+  .site-list__item a {
+    font-size: 15px;
+  }
+
+  .additional-list {
+    order:3;
+    margin-top: 25px;
+  }
+
+  .additional-list__item--delievery {
+    display: block;
+  }
+
+  .additional-list__item--delievery a {
+    .general-font;
+  }
   .user-list {
     order: 1;
     display: flex;
-    min-width: 400px;
   }
 
   .user-list__search {
@@ -127,5 +158,63 @@
     text-indent: -9999px;
     overflow: hidden;
     background-position: center;
+  }
+
+  .user-list__bucket {
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    order:2;
+    border: 1px solid #ececec;
+    margin-left: 0;
+    flex-grow: 1;
+  }
+
+  .page-header__logo-image {
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 149px;
+    height: 72px;
+    padding-left: 149px;
+    box-sizing: border-box;
+  }
+
+  .site-list {
+    order: 1;
+  }
+
+  .site-list__item {
+  border: 1px solid #ececec;
+  }
+
+  .user-list {
+    order:3;
+  }
+
+  .additional-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-list__item {
+    display: block;
+  }
+
+  .additional-list__item a{
+    .bold;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .additional-list__item--delievery {
+    margin-left: 350px;
+  }
+
+  .additional-list__item--delievery a {
+    .general-font;
   }
 }

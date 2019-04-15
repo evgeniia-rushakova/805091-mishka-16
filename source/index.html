@@ -9,12 +9,11 @@
   </head>
   <body>
     <header class="page-header">
+      <nav class="main-nav">
       <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин игрушек ручной работы «Мишка»">
       </a>
-      <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Открыть меню"></button>
-        <!--<div class="main-nav__wrapper">-->
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -31,7 +30,12 @@
             <a class="user-list__bucket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <!--</div>-->
+        <ul class="main-nav__list additional-list">
+          <li class="additional-list__item"><a href="#">Новые поступления</a></li>
+          <li class="additional-list__item"><a href="#">Распродажа</a></li>
+          <li class="additional-list__item additional-list__item--delievery">
+            <a href="#">Бесплатная доставка по России</a>
+          </li>
       </nav>
     </header>
     <main class="page-main">
