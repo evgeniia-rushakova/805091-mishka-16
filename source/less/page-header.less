@@ -102,6 +102,7 @@
   .page-header__logo {
     margin-bottom: 0;
     margin-left: 50px;
+    padding-top: 22px;
   }
 
   .page-header__logo-image {
@@ -117,10 +118,7 @@
   .main-nav__toggle {
     display: none;
   }
-  /*.main-nav__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}*/
+
   .site-list {
     order: 2;
     display: flex;
@@ -169,6 +167,7 @@
   .page-header__logo {
     order:2;
     border: 1px solid #ececec;
+    border-left:none;
     margin-left: 0;
     flex-grow: 1;
   }
@@ -181,10 +180,21 @@
     height: 72px;
     padding-left: 149px;
     box-sizing: border-box;
+
   }
 
   .site-list {
     order: 1;
+  }
+
+  .site-list a{
+    font-size: 17px;
+    line-height: 24px;
+    padding: 21px 55px;
+  }
+
+  .site-list__item:nth-of-type(2){
+    border-right: none;
   }
 
   .site-list__item {

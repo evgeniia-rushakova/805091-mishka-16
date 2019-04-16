@@ -6,5 +6,28 @@
 .catalog-page__title {
   .title-font;
   font-size: 27px;
+  text-align: center;
   padding: 76px 41px;
+
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-page {
+    margin-top: -115px;
+  }
+
+  .catalog-page__header {
+    margin-bottom: 60px;
+  }
+
+  .catalog-page__title {
+    padding-top: 102px;
+  padding-bottom: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-page {
+    margin-top: -93px;
+  }
 }
