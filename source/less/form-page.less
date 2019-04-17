@@ -229,3 +229,91 @@
   background-color: white;
   border: solid 2px @greyish-brown;
 }
+
+@media (min-width: @tablet-width) {
+    .form-page {
+
+    }
+
+    .form-page__header {
+      text-align: center;
+    }
+
+    .form-page__title {
+      padding: 0;
+      margin: 0;
+      padding-bottom: 80px;
+      padding-top: 21px;
+    }
+
+    .order-form__description {
+      font-size: 17px;
+      line-height: 30px;
+      padding-left: 21px;
+      padding-top: 58px;
+      margin-bottom: 73px;
+    }
+
+    .order-form__fieldset {
+      border:none;
+      padding-left: 24px;
+    }
+
+    .order-form__fieldset--special {
+      background-color: @light-grey;
+    }
+
+    .order-form__label {
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    .order-form__radio + label {
+      padding: 6px 0 0 83px;
+      margin-bottom: 53px;
+      margin-left: 162px;
+    }
+
+    .order-form__radio + label::before {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 54px;
+    }
+
+    .order-form__radio:checked + label::after {
+      width: 22px;
+      height: 22px;
+      top: 6px;
+      left: 15px;
+    }
+
+    .order-form__wrapper-color {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 163px;
+    }
+
+    .order-form__checkbox + label {
+      padding: 6px 0 0 83px;
+      margin-bottom: 53px;
+      flex-basis: 180px;
+    }
+
+    .order-form__checkbox + label::before {
+      width: 50px;
+      height: 48px;
+      background-color: @light-grey;
+    }
+
+    .order-form__checkbox:checked + label::after {
+      background-size: 88%;
+      top: 5px;
+      left: 11px;
+    }
+
+    .order-form__text {
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+}

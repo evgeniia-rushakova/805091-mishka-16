@@ -10,31 +10,33 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин игрушек ручной работы «Мишка»">
-        </a>
-        <button class="main-nav__toggle" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Открыть меню"></button>
+        <div class="main-nav__mobile-wrapper">
+          <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин игрушек ручной работы «Мишка»">
+          </a>
+          <button class="main-nav__toggle" type="button"><img src="img/icon-menu-open.svg" width="20" height="14" alt="Открыть меню"></button>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__item__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a  class="site-list__item__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__search" href="#">Поиск по сайту</a>
+            <a class="user-list__item__link user-list__search" href="#">Поиск по сайту</a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__bucket" href="#">Корзина: пока пуста</a>
+            <a class="user-list__item__link user-list__bucket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
-        <li class="additional-list__item"><a href="#">Новые поступления</a></li>
-        <li class="additional-list__item"><a href="#">Распродажа</a></li>
+        <li class="additional-list__item"><a class="additional-list__item__link" href="#">Новые поступления</a></li>
+        <li class="additional-list__item"><a class="additional-list__item__link" href="#">Распродажа</a></li>
         <li class="additional-list__item additional-list__item--delievery">
-          <a href="#">Бесплатная доставка по России</a>
+          <a class="additional-list__item__link additional-list__item__link--delievery "href="#">Бесплатная доставка по России</a>
         </li>
       </nav>
     </header>
@@ -137,26 +139,26 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-        <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__list">
-          <tbody class="contacts__table-wrapper">
-            <tr class="contacts__item">
-              <td class="contacts__name">e-mail:</td>
-              <td class="contacts__value"><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            <tr class="contacts__item">
-              <td class="contacts__name">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tbody>
-        </table>
-        <a class=" button contacts__feedback-button contacts__feedback-button--desktop"  href="#">НАПИШИТЕ НАМ</a></div>
-      <section class="contacts__map map">
-        <h3 class="visually-hidden">Как нас найти?</h3>
-
-        <img class="map__screenshot" src="img/map-mobile@1x.jpg" alt="Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="322" height="457">
-        <span class="map__flag"></span>
-        <!--<iframe class="map__interactive visually-hidden" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aade9f219be3e3d554d784b7dc9799ac651abe88ef7686ebbc8e4f6f2d1a68d2c&amp;source=constructor" width="1200" height="430"></iframe>-->
-      </section>
-      <a class=" button contacts__feedback-button contacts__feedback-button--mobile"  href="#">НАПИШИТЕ НАМ</a>
+          <h3 class="contacts__title">Контакты</h3>
+          <table class="contacts__list">
+            <tbody class="contacts__table-wrapper">
+              <tr class="contacts__item">
+                <td class="contacts__name">e-mail:</td>
+                <td class="contacts__value"><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+              <tr class="contacts__item">
+                <td class="contacts__name">адрес:</td>
+                <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tbody>
+          </table>
+          <a class=" button contacts__feedback-button contacts__feedback-button--desktop"  href="#">НАПИШИТЕ НАМ</a>
+        </div>
+        <section class="contacts__map map">
+          <h3 class="visually-hidden">Как нас найти?</h3>
+          <img class="map__screenshot" src="img/map-mobile@1x.jpg" alt="Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="322" height="457">
+          <span class="map__flag"></span>
+          <!--<iframe class="map__interactive visually-hidden" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aade9f219be3e3d554d784b7dc9799ac651abe88ef7686ebbc8e4f6f2d1a68d2c&amp;source=constructor" width="1200" height="430"></iframe>-->
+        </section>
+        <a class=" button contacts__feedback-button contacts__feedback-button--mobile"  href="#">НАПИШИТЕ НАМ</a>
       </section>
     </main>
     <footer class="page-footer">

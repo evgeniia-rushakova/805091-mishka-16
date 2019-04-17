@@ -1,3 +1,17 @@
+main {
+  width:320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media(min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
+}
+
 .general-font {
   font-family: "Opensans", sans-serif;
   font-size: 15px;
