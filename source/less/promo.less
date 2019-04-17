@@ -7,8 +7,17 @@
   .title-font;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+  //padding-top: 27px;
   padding-bottom: 5px;
+}
+
+.promo__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__info {
+  order: 1;
 }
 
 .promo__week {
@@ -49,6 +58,11 @@
 
 .promo__photo {
   margin-bottom: 21px;
+  order: 2;
+}
+
+.promo__order-wrapper {
+  order: 3;
 }
 
 .promo__price {
@@ -66,4 +80,103 @@
   background-color: white;
   border: solid 2px @greyish-brown;
   margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    padding-left: 40px;
+    padding-right: 60px;
+    margin-bottom: 82px;
+  }
+
+  .promo__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  .promo__week {
+    padding-top: 10px;
+    max-width: 130px;
+    text-align: center;
+  }
+
+  .promo__card {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .promo__info {
+    order: 1;
+    max-width: 292px;
+  }
+
+  .promo__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 43px;
+  }
+
+  .promo__order-wrapper {
+    order: 3;
+    padding-left: 15px;
+    margin-top: -128px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo__buy {
+    padding: 13px 97px;
+  }
+
+  .promo__photo {
+    order: 2;
+    width: 333px;//vremenno
+    height: 404px;//vremenno
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title-wrapper {
+    justify-content: flex-start;
+    overflow: auto;
+    padding-top: 53px;
+    padding-left: 65px;
+  }
+
+  .promo__title {
+    order: 2;
+  }
+
+  .promo__week {
+    order: 1;
+    margin-right: 24px;
+  }
+
+  .promo__card {
+    margin-top: -138px;
+  }
+
+  .promo__info {
+    padding-left: 224px;
+  }
+
+  .promo__description {
+    padding-top: 141px;
+    margin-bottom: 57px;
+  }
+
+  .promo__photo {
+    min-height: 636px;//vremenno
+    min-width: 525px;//vremenno dlya setki
+  }
+
+  .promo__order-wrapper {
+    margin-top: -126px;
+    padding-left: 224px;
+  }
 }

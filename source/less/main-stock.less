@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   min-height: 375px;
   background-position: center 0;
+  margin-bottom: 30px;
 }
 
 .main-stock__slogan {
@@ -44,4 +45,43 @@
 
 .main-stock__item--lamp {
   background-color: @seafoam-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .main-stock {
+    margin-bottom: 49px;
+  }
+
+  .main-stock__slogan {
+    padding-left: 52px;
+    padding-right: 67px;
+  }
+
+  .main-stock__list {
+    display: flex;
+    padding-top: 243px;
+    padding-left: 45px;
+    padding-right: 62px;
+  }
+
+  .main-stock__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-stock {
+    margin-bottom: 70px;
+  }
+
+  .main-stock__slogan {
+    padding-top: 131px;
+    padding-left: 214px;
+    padding-right: 214px;
+  }
+
+  .main-stock__item {
+    flex-grow: 1;
+  }
 }

@@ -8,7 +8,39 @@
 }
 
 .map__flag {
+  display: block;
   position: relative;
   top: -326px;
   left: 166px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 67px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin-bottom: 71px;
+  }
+
+  .map__screenshot {
+    width: @tablet-width;//vremenno;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    order: 4;
+  }
+
+  .map__screenshot {
+    margin: 0;
+    width: 525px;
+    height: 457px;
+  }
+
+  .map__flag {
+    top: -318px;
+    left: 246px;
+  }
 }
