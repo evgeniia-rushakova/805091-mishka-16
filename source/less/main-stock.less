@@ -3,14 +3,14 @@
   background-repeat: no-repeat;
   min-height: 375px;
   background-position: center 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .main-stock__slogan {
   .title-font;
   font-size: 27px;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 69px;
   padding-left: 36px;
   padding-right: 39px;
   margin-bottom: 125px;
@@ -24,19 +24,17 @@
 
 .main-stock__item {
   list-style: none;
-  padding-left: 29px;
-  padding-top: 24px;
-  padding-bottom: 32px;
-  padding-right: 150px;
 }
 
 .main-stock__link {
   .bold;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 24px;
   text-align: left;
   color: white;
   text-decoration: none;
+  display: block;
+  padding: 26px 150px 30px 29px;
 }
 
 .main-stock__item--toy {
@@ -53,35 +51,43 @@
   }
 
   .main-stock__slogan {
-    padding-left: 52px;
-    padding-right: 67px;
+    padding: 98px 67px 250px 62px;
   }
 
   .main-stock__list {
     display: flex;
-    padding-top: 243px;
-    padding-left: 45px;
-    padding-right: 62px;
+    padding-left: 49px;
+    padding-right: 51px;
+  }
+  .main-stock__item {
+    min-width: 334px;
   }
 
   .main-stock__link {
     font-size: 20px;
     line-height: 30px;
+    padding: 27px 149px 29px 36px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-stock {
-    margin-bottom: 70px;
+    margin-bottom: 73px;
   }
 
   .main-stock__slogan {
-    padding-top: 131px;
+    padding-top: 88px;
     padding-left: 214px;
     padding-right: 214px;
+    margin-bottom: 109px;
   }
 
   .main-stock__item {
     flex-grow: 1;
+    min-width: 525px;
+  }
+
+  .main-stock__link {
+    padding: 27px 305px 29px 36px;
   }
 }
