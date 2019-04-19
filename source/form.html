@@ -46,13 +46,14 @@
       </div>
       <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--type">
           <legend class="order-form__legend">ТИП</legend>
+          <div class="order-form__radio-wrapper">
           <input class="order-form__radio" type="radio" name="type" id ="accessory" value="accessory" checked>
           <label for ="accessory" class="order-form__label">Аксессуар для
           интерьера</label>
           <input class="order-form__radio" type="radio" name="type" value="kids-toy" id="kids-toy">
-          <label for="kids-toy" class="order-form__label">Детская игрушка</label>
+          <label for="kids-toy" class="order-form__label">Детская игрушка</label></div>
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--special">
           <legend class="order-form__legend" > Цвет</legend>
@@ -71,7 +72,7 @@
             <label for="orange" class="order-form__label">Оранжевый</label>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--personal">
           <legend class="order-form__legend">ФИО</legend>
           <label class="order-form__label" for="your-name">Имя:</label>
           <input class="order-form__text" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
@@ -81,11 +82,11 @@
           <input  class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--special">
-          <legend class="order-form__legend"><label for="phone">ТЕЛ</label></legend>
+          <legend class="order-form__legend order-form__legend--special"><label for="phone">ТЕЛ</label></legend>
           <input  class="order-form__text" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--special">
-          <legend class="order-form__legend"><label for="email">E-MAIL</label></legend>
+          <legend class="order-form__legend  order-form__legend--special"><label for="email">E-MAIL</label></legend>
           <input  class="order-form__text" type="text" name="email" id="email" required placeholder="Ваш Email*">
         </fieldset>
         <fieldset class="order-form__fieldset">
