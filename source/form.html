@@ -55,7 +55,7 @@
           <input class="order-form__radio" type="radio" name="type" value="kids-toy" id="kids-toy">
           <label for="kids-toy" class="order-form__label">Детская игрушка</label></div>
         </fieldset>
-        <fieldset class="order-form__fieldset order-form__fieldset--special">
+        <fieldset class="order-form__fieldset order-form__fieldset--color">
           <legend class="order-form__legend" > Цвет</legend>
           <div class="order-form__wrapper-color">
             <input class="order-form__checkbox" type="checkbox" name="color" value="white" id = "white" checked>
@@ -74,27 +74,29 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--personal">
           <legend class="order-form__legend">ФИО</legend>
+          <div class="order-form__wrapper-personal">
           <label class="order-form__label" for="your-name">Имя:</label>
           <input class="order-form__text" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
           <label class="order-form__label" for="surname">Фамилия:</label>
           <input  class="order-form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           <label class="order-form__label" for="fathername">Отчество:</label>
-          <input  class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
+          <input  class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" ></div>
         </fieldset>
-        <fieldset class="order-form__fieldset order-form__fieldset--special">
-          <legend class="order-form__legend order-form__legend--special"><label for="phone">ТЕЛ</label></legend>
+        <fieldset class="order-form__fieldset order-form__fieldset--telephone">
+          <legend class="order-form__legend"><label for="phone">ТЕЛ</label></legend>
           <input  class="order-form__text" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
         </fieldset>
-        <fieldset class="order-form__fieldset order-form__fieldset--special">
-          <legend class="order-form__legend  order-form__legend--special"><label for="email">E-MAIL</label></legend>
+        <fieldset class="order-form__fieldset order-form__fieldset--email">
+          <legend class="order-form__legend"><label for="email">E-MAIL</label></legend>
           <input  class="order-form__text" type="text" name="email" id="email" required placeholder="Ваш Email*">
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--extra">
           <legend  class="order-form__legend"><label for="extra">ДОП</label></legend>
           <textarea  class="order-form__textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
         </fieldset>
+        <div class="order-form__submit-wrapper">
         <p class="order-form__explain">*Поля обязательны для заполнения</p>
-        <button class="button order-form__button " type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <button class="button order-form__button " type="submit">ОТПРАВИТЬ ЗАКАЗ</button></div>
       </form>
     </main>
     <footer class="page-footer">
