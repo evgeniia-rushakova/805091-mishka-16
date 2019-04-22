@@ -16,17 +16,17 @@
 }
 
 .main-nav__mobile-wrapper {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
   position: relative;
   width: 320px;
-  margin: 0 auto;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top:20px;
+  top: 20px;
   right: 25px;
   display: block;
   width: 21px;
@@ -59,7 +59,7 @@
 }
 
 .main-nav__mobile-wrapper--opened .main-nav__toggle::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 10px;
   right: 5px;
@@ -118,7 +118,7 @@
     display: none;
   }
 
-    .main-nav__mobile-wrapper--closed + .site-list + .user-list {
+  .main-nav__mobile-wrapper--closed + .site-list + .user-list {
     display: none;
   }
 
@@ -252,7 +252,7 @@
 
   .site-list {
     order: 1;
-    margin-left:0;
+    margin-left: 0;
   }
 
   .site-list__item__link {
