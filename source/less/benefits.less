@@ -19,6 +19,73 @@
   .bold;
   list-style: none;
   margin-top: 83px;
+  position: relative;
+}
+
+.benefits__item--flower::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -53px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+}
+
+.benefits__item--money::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -51px;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+}
+
+.benefits__item--like::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: -46px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.benefits__item--string::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -49px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+}
+
+.benefits__item--rocket::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: -48px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+}
+
+.benefits__item--gift::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: -51px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,6 +118,30 @@
 
   .benefits__item:last-child {
     margin-bottom: 0;
+  }
+
+  .benefits__item--flower::before {
+    left: 14px;
+  }
+
+  .benefits__item--money::before {
+    left: 5px;
+  }
+
+  .benefits__item--like::before {
+    left: 13px;
+  }
+
+  .benefits__item--string::before {
+    left: 9px;
+  }
+
+  .benefits__item--rocket::before {
+    left: 0;
+  }
+
+  .benefits__item--gift::before {
+    left: 9px;
   }
 }
 

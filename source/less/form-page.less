@@ -278,6 +278,19 @@
     padding-top: 94px;
   }
 
+  .form-page__title::before {
+    content: "";
+    position: absolute;
+    top: 302px;
+    left: 0;
+    width: 768px;
+    height: 25px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0;
+  }
+
   .order-form {
     margin: 0;
     padding: 0;
@@ -490,6 +503,16 @@
 }
 
 @media (min-width: @desktop-width) {
+    .form-page__title {
+      padding-bottom: 110px;
+    }
+
+    .form-page__title::before {
+    top: 326px;
+    width: 1150px;
+    background-position: 21px 0;
+  }
+
   .order-form__description {
     padding: 127px 199px 75px 225px;
   }

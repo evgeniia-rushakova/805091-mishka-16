@@ -86,6 +86,21 @@
     padding-left: 46px;
     padding-right: 48px;
     margin-bottom: 82px;
+    position: relative;
+  }
+
+  .promo::after {
+    content: "";
+    position: absolute;
+    width: 768px;
+    height: 30px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position-x: -25px;
+    background-size: 101%;
+    bottom: -47px;
+    left: 0;
   }
 
   .promo__title-wrapper {
@@ -121,7 +136,7 @@
   .promo__order-wrapper {
     order: 3;
     padding-left: 4px;
-    margin-top: -135px;
+    margin-top: -122px;
   }
 
   .promo__price {
@@ -136,15 +151,24 @@
 
   .promo__photo {
     order: 2;
-    width: 333px;//vremenno
-    height: 404px;//vremenno
-    padding-top: 27px;
+    width: 333px;
+    height: 404px;
+    padding-top: 14px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
     margin-bottom: 50px;
+  }
+
+  .promo::after {
+    width: 1050px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    margin-left: 50px;
+    margin-right: 50px;
+    background-size: 100%;
+    bottom: -69px;
   }
 
   .promo__title-wrapper {

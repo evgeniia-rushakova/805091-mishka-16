@@ -101,6 +101,7 @@
 .user-list__item {
   list-style: none;
   border: 1px solid #ececec;
+  border-top: none;
 }
 
 .user-list__item__link {
@@ -144,6 +145,9 @@
   .main-nav__mobile-wrapper {
     margin: 0;
     padding: 0;
+    width: 365px;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
   }
 
   .main-nav__list {
@@ -151,19 +155,19 @@
   }
 
   .page-header__logo {
-    margin-bottom: 0;
-    margin-left: 50px;
-    padding-top: 10px;
+    margin:0;
+    padding: 0;
   }
 
-  .page-header__logo-image {
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
+ .page-header__logo-image {
     display: block;
     width: 112px;
     height: 46px;
-    padding-left: 112px;
-    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    padding-top: 22px;
+    padding-left: 48px;
+    padding-bottom: 20px;
   }
 
   .main-nav__toggle {
@@ -182,12 +186,12 @@
 
   .site-list__item__link {
     font-size: 15px;
-    padding: 20px 9px 0 28px;
+    padding: 16px 9px 0 29px;
   }
 
   .additional-list {
     order: 3;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .additional-list__item--delievery {
@@ -201,7 +205,6 @@
   .user-list {
     order: 1;
     display: flex;
-    min-height: 88px;
   }
 
   .user-list__search {
@@ -211,14 +214,15 @@
     text-indent: -9999px;
     overflow: hidden;
     background-position: center;
-    padding-left: 32px;
+    padding-left: 28px;
     padding-right: 32px;
+    padding-top: 43px;
   }
 
   .user-list__bucket {
     padding-right: 50px;
     padding-left: 83px;
-    padding-top: 18px;
+    padding-top: 30px;
   }
 }
 
@@ -228,9 +232,6 @@
   }
 
   .main-nav__mobile-wrapper {
-    border: 1px solid #ececec;
-    border-left: none;
-    margin-left: 0;
     order: 2;
     max-width: 277px;
   }
@@ -241,13 +242,15 @@
   }
 
   .page-header__logo-image {
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
+    //background-image: url("../img/logo-desktop.svg");
+    //background-repeat: no-repeat;
     display: block;
     width: 149px;
     height: 72px;
-    padding-left: 149px;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    //padding-left: 149px;
+    //box-sizing: border-box;
   }
 
   .site-list {
@@ -267,6 +270,7 @@
 
   .site-list__item {
     border: 1px solid #ececec;
+    border-top: none;
     min-width: 234px;
   }
 
