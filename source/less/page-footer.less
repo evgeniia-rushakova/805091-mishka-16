@@ -3,6 +3,7 @@
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .social__list {
@@ -75,7 +76,6 @@
     padding: 50px;
   }
 
-
   .page-footer__logo {
     background-image: url("../img/logo-footer.svg");
     width: 102px;
@@ -103,7 +103,12 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     padding-left: 51px;
+    padding-right: 50px;
     padding-top: 47px;
+    max-width: 1150px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-footer__logo {

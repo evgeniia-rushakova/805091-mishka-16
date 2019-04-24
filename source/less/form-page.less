@@ -10,7 +10,7 @@
   .title-font;
   margin: 0;
   font-size: 27px;
-  padding: 74px 36px;
+  padding: 73px 36px;
   margin-bottom: 24px;
 }
 
@@ -30,7 +30,14 @@
   margin: 0;
   padding: 0;
   border-top: 1px solid @seafoam-blue;
-  margin-bottom: 17px;
+}
+
+.order-form__fieldset--type {
+  margin-bottom: 20px;
+}
+
+.order-form__fieldset--personal {
+  margin-bottom: 8px;
 }
 
 .order-form__legend {
@@ -38,7 +45,7 @@
   line-height: 18px;
   color: @seafoam-blue;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-right: 24px;
 }
 
@@ -145,14 +152,14 @@
   .general-font;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 18px;
   color: @greyish-brown;
   min-width: 260px;
-  padding-left: 17px;
+  padding-left: 0;
+  padding-top: 15px;
+  padding-bottom: 17px;
 
   &:hover {
     box-shadow: inset 0 -2px 0 0 @seafoam-blue;
@@ -186,17 +193,40 @@
   opacity: 0.3;
 }
 
+.order-form__fieldset--personal .order-form__legend {
+  margin-bottom: 30px;
+}
+
+.order-form__fieldset--telephone {
+  margin-bottom: 5px;
+}
+
+.order-form__fieldset--telephone .order-form__legend {
+  margin-bottom: 6px;
+}
+
+.order-form__fieldset--email {
+  margin-bottom: 5px;
+}
+
+.order-form__fieldset--email .order-form__legend {
+  margin-bottom: 11px;
+}
+
+.order-form__fieldset--extra .order-form__legend {
+  margin-bottom: 25px;
+}
+
 .order-form__textarea {
   .general-font;
   border: 2px solid @greyish-brown;
   min-width: 237px;
   min-height: 120px;
-  margin-bottom: 18px;
   font-size: 17px;
   line-height: 18px;
   color: @greyish-brown;
-  padding-left: 17px;
-  padding-top: 18px;
+  padding-left: 14px;
+  padding-top: 15px;
   resize: none;
   overflow: auto;
 
@@ -216,6 +246,7 @@
   .general-font;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 30px;
 }
 
 .order-form__button {
@@ -229,39 +260,85 @@
   background-color: white;
   border: solid 2px @greyish-brown;
 }
-
+/*
 @media (min-width: @tablet-width) {
+  .form-page {
+    margin-bottom: 35px;
+  }
+
   .form-page__header {
     text-align: center;
+    margin-top: -44px;
   }
 
   .form-page__title {
     padding: 0;
     margin: 0;
     padding-bottom: 80px;
-    padding-top: 21px;
+    padding-top: 94px;
+  }
+
+  .form-page__title::before {
+    content: "";
+    position: absolute;
+    top: 296px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+  .order-form {
+    margin: 0;
+    padding: 0;
   }
 
   .order-form__description {
     font-size: 17px;
     line-height: 30px;
-    padding-left: 21px;
-    padding-top: 58px;
-    margin-bottom: 73px;
+    padding: 58px 51px 73px 51px;
+    margin-bottom: 0;
   }
 
   .order-form__fieldset {
     border: none;
-    padding-left: 24px;
   }
 
-  .order-form__fieldset--special {
+  .order-form__fieldset--type {
+    margin-bottom: 0;
+    padding-left: 51px;
+    padding-bottom: 15px;
+  }
+
+  .order-form__fieldset--color {
     background-color: @light-grey;
+    margin-top: -81px;
+    padding-bottom: 15px;
+  }
+
+  .order-form__fieldset--color .order-form__legend {
+    padding-top: 149px;
+    padding-left: 52px;
+  }
+
+  .order-form__text {
+    padding-left: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .order-form__label {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  .order-form__radio-wrapper {
+    margin-top: -58px;
   }
 
   .order-form__radio + label {
@@ -286,13 +363,14 @@
   .order-form__wrapper-color {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 163px;
+    margin-left: 218px;
+    margin-top: -58px;
   }
 
   .order-form__checkbox + label {
     padding: 6px 0 0 83px;
     margin-bottom: 53px;
-    flex-basis: 180px;
+    flex-basis: 177px;
   }
 
   .order-form__checkbox + label::before {
@@ -307,8 +385,523 @@
     left: 11px;
   }
 
-  .order-form__text {
+  .order-form__fieldset--personal {
+    margin-bottom: 5px;
+  }
+
+  .order-form__fieldset--personal .order-form__legend {
+    padding-top: 67px;
+    padding-left: 52px;
+  }
+
+  .order-form__wrapper-personal {
+    margin-top: -54px;
+    margin-left: 218px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__wrapper-personal .order-form__label {
+    margin-right: 20px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  .order-form__wrapper-personal .order-form__text {
+    min-width: 357px;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    padding-left: 21px;
+    padding-bottom: 14px;
+    margin-bottom: 37px;
+  }
+
+  .order-form__fieldset--telephone {
+    background-color: @light-grey;
+    margin-top: -73px;
+  }
+
+  .order-form__fieldset--telephone .order-form__legend {
+    padding-top: 147px;
+    padding-left: 52px;
+    display: block;
+  }
+
+  .order-form__fieldset--telephone .order-form__text {
+    margin-left: 217px;
+    margin-top: -42px;
+    margin-bottom: 31px;
+    width: 483px;
+    display: block;
+    background-color: inherit;
+  }
+
+  .order-form__fieldset--email {
+    background-color: @light-grey;
+    margin-top: -70px;
+    //min-height: 144px;
+  }
+
+  .order-form__fieldset--email .order-form__legend {
+    padding-top: 74px;
+    padding-left: 52px;
+    display: block;
+  }
+
+  .order-form__fieldset--email .order-form__text {
+    margin-left: 217px;
+    margin-top: -48px;
+    margin-bottom: 44px;
+    width: 483px;
+    display: block;
+    background-color: inherit;
+  }
+
+  .order-form__fieldset--extra {
+    margin-bottom: 39px;
+  }
+
+  .order-form__fieldset--extra .order-form__legend {
+    padding-top: 67px;
+    padding-left: 52px;
+    display: block;
+  }
+
+  .order-form__textarea {
+    min-width: 481px;
+    min-height: 122px;
+    margin-left: 217px;
+    margin-top: -59px;
+    font-size: 19px;
+  }
+
+  .order-form__submit-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 51px;
+  }
+
+  .order-form__explain {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .order-form__button {
+    order: 1;
+    font-size: 17px;
+    line-height: 17px;
+    align-self: center;
+    padding: 12px 30px 15px 30px;
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page__title {
+    padding-bottom: 110px;
+  }
+
+  .form-page__title::before {
+    top: 326px;
+    width: 100%;
+    background-position: 21px 0;
+  }
+
+  .order-form__description {
+    padding: 127px 199px 75px 225px;
+  }
+
+  .order-form__fieldset--type {
+    padding-left: 113px;
+  }
+
+  .order-form__radio + label {
+    margin-left: 112px;
+  }
+
+  .order-form__fieldset--color .order-form__legend {
+    padding-left: 109px;
+  }
+
+  .order-form__wrapper-color {
+    margin-left: 224px;
+  }
+
+  .order-form__fieldset--personal .order-form__legend {
+    padding-left: 110px;
+  }
+
+  .order-form__wrapper-personal {
+    margin-left: 226px;
+    padding-right: 227px;
+  }
+
+  .order-form__wrapper-personal .order-form__label {
+    margin-right: 25px;
+  }
+
+  .order-form__wrapper-personal .order-form__text {
+    min-width: 500px;
+  }
+
+  .order-form__fieldset--telephone .order-form__legend {
+    padding-top: 148px;
+    padding-left: 112px;
+  }
+
+  .order-form__fieldset--telephone .order-form__text {
+    margin-left: 225px;
+    min-width: 682px;
+  }
+
+  .order-form__fieldset--email .order-form__legend {
+    padding-left: 112px;
+  }
+
+  .order-form__fieldset--email .order-form__text {
+    margin-left: 225px;
+    min-width: 682px;
+  }
+
+  .order-form__fieldset--extra {
+    margin-bottom: 35px;
+  }
+
+  .order-form__fieldset--extra .order-form__legend {
+    padding-left: 112px;
+  }
+
+  .order-form__textarea {
+    min-width: 680px;
+    margin-left: 225px;
+    margin-top: -60px;
+  }
+
+  .order-form__submit-wrapper {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .order-form__button {
+    padding: 16px 30px;
+  }
+}
+*/
+@media (min-width: @tablet-width) {
+  .form-page {
+    margin-bottom: 35px;
+  }
+
+  .form-page__header {
+    text-align: center;
+    margin-top: -44px;
+  }
+
+  .form-page__title {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 80px;
+    padding-top: 94px;
+  }
+
+  .order-form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .order-form__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 58px 51px 73px 51px;
+    margin-bottom: 0;
+  }
+
+  .order-form__fieldset {
+    border: none;
+  }
+
+  .order-form__fieldset--type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 220px;
+    margin-bottom: 13px;
+  }
+
+  .order-form__radio + label {
+    padding: 6px 0 0 83px;
+    margin-bottom: 53px;
+  }
+
+  .order-form__radio + label::before {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 54px;
+  }
+
+  .order-form__radio:checked + label::after {
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    left: 15px;
+  }
+
+  .order-form__fieldset--color {
+    background-color: @light-grey;
+    padding-left: 50px;
+    padding-top: 68px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .order-form__wrapper-color {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: -6px;
+  }
+
+  .order-form__checkbox + label {
+    padding: 6px 0 0 83px;
+    margin-bottom: 53px;
+    flex-basis: 177px;
+  }
+
+  .order-form__checkbox + label::before {
+    width: 50px;
+    height: 48px;
+    background-color: @light-grey;
+  }
+
+  .order-form__checkbox:checked + label::after {
+    background-size: 88%;
+    top: 5px;
+    left: 11px;
+  }
+
+  .order-form__label {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  .order-form__fieldset--personal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 14px;
+  }
+
+  .order-form__wrapper-personal {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  .order-form__fieldset--personal .order-form__legend {
+    margin-right: 100px;
+  }
+
+  .order-form__wrapper-personal .order-form__label {
+    margin-right: 26px;
+    padding-top: 3px;
+  }
+
+  .order-form__wrapper-personal .order-form__text {
+    flex-grow: 1;
+    min-width: 350px;
+    max-width: 428px;
+    font-size: 19px;
+    line-height: 19px;
+    padding-top: 0;
+    padding-left: 15px;
+    margin-bottom: 34px;
+  }
+
+  .order-form__fieldset--telephone {
+    padding-left: 52px;
+    padding-top: 45px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @light-grey;
+    margin-bottom: 0;
+  }
+
+  .order-form__fieldset--telephone .order-form__legend {
+    padding-top: 21px;
+  }
+
+  .order-form__fieldset--telephone .order-form__text {
+    flex-basis: 485px;
+    background-color: @light-grey;
+    font-size: 19px;
+    line-height: 19px;
+    padding-left: 15px;
+  }
+
+  .order-form__fieldset--email {
+    padding-left: 52px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    margin-top: -5px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @light-grey;
+  }
+
+  .order-form__fieldset--email .order-form__legend {
+    padding-top: 19px;
+  }
+
+  .order-form__fieldset--email .order-form__text {
+    flex-basis: 485px;
+    background-color: @light-grey;
+    font-size: 19px;
+    line-height: 19px;
+    padding-left: 15px;
+  }
+
+  .order-form__fieldset--extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+  }
+
+  .order-form__fieldset--extra .order-form__legend {
+    padding-top: 16px;
+  }
+
+  .order-form__textarea {
+    min-width: 481px;
+    min-height: 122px;
+    font-size: 19px;
+  }
+
+  .order-form__submit-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 51px;
+  }
+
+  .order-form__explain {
+    font-size: 17px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .order-form__button {
+    order: 1;
+    font-size: 17px;
+    line-height: 17px;
+    align-self: center;
+    padding: 12px 30px 15px 30px;
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__description {
+    padding: 127px 199px 68px 225px;
+  }
+
+  .order-form__fieldset--type {
+    margin-left: 113px;
+    justify-content: flex-start;
+  }
+
+  .order-form__fieldset--type .order-form__legend {
+    padding-right: 74px;
+    padding-top: 5px;
+  }
+
+  .order-form__fieldset--color {
+    padding-left: 110px;
+  }
+
+  .order-form__wrapper-color {
+    margin-left: 47px;
+  }
+
+  .order-form__fieldset--personal {
+    padding-left: 111px;
+    padding-right: 225px;
+  }
+
+  .order-form__fieldset--personal .order-form__legend {
+    padding-top: 5px;
+    margin-right: 45px;
+  }
+
+  .order-form__wrapper-personal {
+    max-width: 700px;
+  }
+
+  .order-form__wrapper-personal .order-form__text {
+    min-width: 558px;
+    max-width: 609px;
+  }
+
+  .order-form__fieldset--telephone {
+    padding-left: 111px;
+    padding-right: 225px;
+    justify-content: flex-start;
+  }
+
+  .order-form__fieldset--telephone .order-form__legend {
+    margin-right: 57px;
+  }
+
+  .order-form__fieldset--telephone .order-form__text {
+    min-width: 685px;
+  }
+
+  .order-form__fieldset--email {
+    padding-left: 111px;
+    padding-right: 225px;
+    justify-content: flex-start;
+  }
+
+  .order-form__fieldset--email .order-form__legend {
+    margin-right: 31px;
+  }
+
+  .order-form__fieldset--email .order-form__text {
+    min-width: 685px;
+  }
+
+  .order-form__fieldset--extra {
+    padding-left: 111px;
+    padding-right: 225px;
+    justify-content: flex-start;
+  }
+
+  .order-form__fieldset--extra .order-form__legend {
+    margin-right: 51px;
+  }
+
+  .order-form__fieldset--extra .order-form__textarea {
+    min-width: 680px;
+  }
+
+  .order-form__submit-wrapper {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
