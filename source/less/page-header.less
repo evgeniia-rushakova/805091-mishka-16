@@ -74,9 +74,16 @@
   padding: 0;
 }
 
+.site-list {
+  border: 1px solid #ececec;
+}
+
 .site-list__item {
   list-style: none;
-  border: 1px solid #ececec;
+}
+
+.site-list__item:first-of-type {
+  border-bottom: 1px solid #ececec;
 }
 
 .site-list__item__link {
@@ -178,10 +185,15 @@
     order: 2;
     display: flex;
     margin-left: 20px;
+    border:none;
   }
 
   .site-list__item {
     border: none;
+  }
+
+  .site-list__item:first-of-type {
+    border-bottom: none;
   }
 
   .site-list__item__link {
@@ -229,7 +241,7 @@
     padding-right: 32px;
     padding-top: 43px;
     padding-bottom: 27px;
-    max-width: 87px;
+    max-width: 81px;
   }
 
   .user-list__bucket {
@@ -237,7 +249,7 @@
     padding-left: 83px;
     padding-top: 30px;
     padding-bottom: 34px;
-    max-width: 316px;
+    max-width: 313px;
     border-left: 1px solid #ececec;
   }
 }
