@@ -91,15 +91,15 @@
           </picture>
         </div>
         <section class="promo__modal modal">
-      <h3 class="modal__title">Добавить в корзину</h3>
-      <p class="modal__description">Выберите размер:</p>
-      <div class="modal__buttons-wrapper">
-      <button class="modal__size">S</button>
-      <button class="modal__size">M</button>
-      <button class="modal__size">L</button>
-      </div>
-      <button class="modal__add">Добавить</button>
-    </section>
+          <h3 class="modal__title">Добавить в корзину</h3>
+          <p class="modal__description">Выберите размер:</p>
+          <div class="modal__buttons-wrapper">
+            <button class="modal__size">S</button>
+            <button class="modal__size">M</button>
+            <button class="modal__size">L</button>
+          </div>
+          <button class="modal__add">Добавить</button>
+        </section>
       </section>
       <section class="benefits">
         <h3 class="benefits__title">Коротко о нас:</h3>
@@ -208,6 +208,28 @@
           navMain.classList.add('main-nav__mobile-wrapper--closed');
           navMain.classList.remove('main-nav__mobile-wrapper--opened');
         }
+      });
+
+      var modal = document.querySelector('.modal');
+      var button = document.querySelector('.promo__buy');
+
+      button.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      console.log("click!!!");
+      modal.classList.add("modal-show");
+      });
+      var addButton = modal.querySelector('.modal__add');
+      addButton.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.remove("modal-show");
+      });
+      window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modal.classList.contains("modal-show")) {
+      modal.classList.remove("modal-show");
+      }
+      }
       });
     </script>
   </body>
