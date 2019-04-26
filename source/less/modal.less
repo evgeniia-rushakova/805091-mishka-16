@@ -1,16 +1,15 @@
 .modal {
   position: fixed;
-  left: calc( 50% - 160px );
-  top: calc( 50% - 168px );
+  left: calc(50% - 160px);
+  top: calc(50% - 168px);
   width: 320px;
   min-height: 336px;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px rgba(198, 198, 198, 1);
   margin: 0 auto;
   background-color: white;
-  z-index: 2;
+  z-index: 10;
   display: none;
-
 }
 
 .modal-show {
@@ -20,7 +19,6 @@
 .modal__title {
   .title-font;
   margin: 0;
-  padding: 0;
   text-align: center;
   text-transform: uppercase;
   padding: 32px 82px 0 82px;
@@ -69,7 +67,7 @@
   .modal {
     width: 566px;
     max-height: 336px;
-    left: calc( 50% - 283px );
+    left: calc(50% - 283px);
   }
 
   .modal__title {
