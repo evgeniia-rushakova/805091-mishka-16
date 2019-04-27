@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened main-nav__mobile-wrapper--no-js">
+        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened">
           <a  href= "index.html" class="page-header__logo">
             <picture>
               <source media ="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -142,8 +145,6 @@
     <script>
       var navMain = document.querySelector('.main-nav__mobile-wrapper');
       var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav__mobile-wrapper--nojs');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav__mobile-wrapper--closed')) {

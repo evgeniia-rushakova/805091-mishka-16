@@ -157,6 +157,16 @@
     width: 350px;
   }
 
+  .main-nav__mobile-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    background-color: #ececec;
+    bottom: -1px;
+    left: 0;
+  }
+
   .main-nav__list {
     display: block;
   }
@@ -265,21 +275,21 @@
     border-left: none;
   }
 
+  .main-nav__mobile-wrapper::after {
+    left: -25px;
+  }
+
   .page-header__logo {
     padding-top: 8px;
     margin-left: 29px;
   }
 
   .page-header__logo-image {
-    //background-image: url("../img/logo-desktop.svg");
-    //background-repeat: no-repeat;
     display: block;
     width: 149px;
     height: 72px;
     padding: 0;
     margin: 0;
-    //padding-left: 149px;
-    //box-sizing: border-box;
   }
 
   .site-list {
