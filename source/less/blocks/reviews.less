@@ -56,6 +56,14 @@
   background-repeat: no-repeat;
   background-color: white;
   background-position: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__toggles__prev {
@@ -66,6 +74,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__toggles__send {
@@ -78,6 +94,15 @@
   background-color: white;
   border: solid 2px @greyish-brown;
   margin-bottom: 45px;
+
+  &:hover {
+    background-color: @greyish-brown;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

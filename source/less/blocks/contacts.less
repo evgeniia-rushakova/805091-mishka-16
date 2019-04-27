@@ -42,7 +42,15 @@
   text-decoration: none;
   color: @greyish-brown;
   padding-bottom: 4px;
-  border-bottom: 1px solid @seafoam-blue;
+  border-bottom: 1px solid @greeny-blue;
+
+  &:hover {
+    color: @greeny-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__feedback-button {
@@ -56,6 +64,15 @@
   border: solid 2px @greyish-brown;
   margin-bottom: 40px;
   margin-left: 30px;
+
+  &:hover {
+    background-color: @greyish-brown;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .contacts__feedback-button--desktop {
