@@ -42,15 +42,19 @@
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
   background-position: 233px 20px;
-
-  &:hover {
-    ///height: calc(100% +5px);
-  }
+  position: relative;
 
   &:active {
     opacity: 0.3;
   }
 }
+
+.main-stock__item--toy:hover::after {
+      height: 5px;
+      width: 250px;
+      background-color: black;
+      position: absolute;
+    }
 
 .main-stock__item--lamp {
   background-color: @seafoam-blue;
