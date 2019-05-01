@@ -15,6 +15,8 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var minifyjs = require('gulp-js-minify');
+const ahex = require('gulp-ahex');
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -45,6 +47,13 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("minify-js", function(){
+  return gulp.src("source/js/*.js")
+    .pipe(minifyjs())
+    .pipe(rename( {suffix: ".min" }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("sprite", function () {
@@ -85,6 +94,12 @@ gulp.task("refresh", function (done) {
  done();
 });
 
+gulp.task("color-styles", function(){
+  return gulp.src("build/css/style.min.css")
+    .pipe(ahex())
+    .pipe(gulp.dest("build/css/"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -100,5 +115,5 @@ gulp.task("server", function () {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy",  "css", "color-styles", "webp", "sprite", "html", "minify-js"));
 gulp.task("start", gulp.series("build", "server"));
