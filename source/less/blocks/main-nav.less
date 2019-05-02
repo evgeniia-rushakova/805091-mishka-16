@@ -200,7 +200,7 @@
     width: 400px;
     height: 1px;
     background-color: #ececec;
-    bottom: -1.5px;
+    bottom: -1px;
     left: 0;
   }
 
@@ -217,6 +217,7 @@
     display: flex;
     margin-left: 20px;
     border: none;
+    z-index: 1;
   }
 
   .site-list__item {
@@ -235,6 +236,7 @@
   .additional-list {
     order: 3;
     margin-top: 15px;
+    z-index: 5;
   }
 
   .additional-list__item--delievery {
@@ -305,10 +307,12 @@
     order: 2;
     max-width: 272px;
     border-left: none;
+    border-bottom: none;
   }
 
   .main-nav__mobile-wrapper::after {
     left: -41px;
+    bottom: 0;
   }
 
   .page-header__logo {
