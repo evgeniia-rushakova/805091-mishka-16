@@ -50,11 +50,12 @@
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
-        <li class="additional-list__item"><a class="additional-list__item-link" href="#">Новые поступления</a></li>
-        <li class="additional-list__item"><a class="additional-list__item-link" href="#">Распродажа</a></li>
-        <li class="additional-list__item additional-list__item--delievery">
-          <a class="additional-list__item-link additional-list__item-link--delievery "href="#">Бесплатная доставка по России</a>
-        </li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Новые поступления</a></li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Распродажа</a></li>
+          <li class="additional-list__item additional-list__item--delievery">
+            <a class="additional-list__item-link additional-list__item-link--delievery" href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -124,26 +125,22 @@
       <section class="benefits">
         <h3 class="benefits__title">Коротко о нас:</h3>
         <ul class="benefits__list">
-          <div class="benefits__wrapper">
-            <li class="benefits__item benefits__item--flower">Экологически
-              чистые материалы
-            </li>
-            <li class="benefits__item benefits__item--money">Скандинавский стиль
-              по российской цене
-            </li>
-            <li class="benefits__item benefits__item--like">Увеличивает лайки
-              на фотографиях
-            </li>
-          </div>
-          <div class="benefits__wrapper">
-            <li class="benefits__item benefits__item--string">Связано вручную с
-              любовью и умилением
-            </li>
-            <li class="benefits__item benefits__item--rocket">Поддержка отечественного производителя</li>
-            <li class="benefits__item benefits__item--gift">Поставляется в
-              подарочной упаковке
-            </li>
-          </div>
+          <li class="benefits__item benefits__item--flower">Экологически
+            чистые материалы
+          </li>
+          <li class="benefits__item benefits__item--money">Скандинавский стиль
+            по российской цене
+          </li>
+          <li class="benefits__item benefits__item--like">Увеличивает лайки
+            на фотографиях
+          </li>
+          <li class="benefits__item benefits__item--string">Связано вручную с
+            любовью и умилением
+          </li>
+          <li class="benefits__item benefits__item--rocket">Поддержка отечественного производителя</li>
+          <li class="benefits__item benefits__item--gift">Поставляется в
+            подарочной упаковке
+          </li>
         </ul>
       </section>
       <section class="reviews">
@@ -157,8 +154,8 @@
                 <p class="reviews__nickname">@misssssiskras</p>
               </div>
               <div class="reviews__toggles slider__toggles">
-                <button type="button" class="button slider__toggles-prev" alt="Предыдущий отзыв"></button>
-                <button type="button" class="button slider__toggles-next" alt="Следующий отзыв"></button>
+                <button type="button" class="button slider__toggles-prev" name="Предыдущий отзыв"></button>
+                <button type="button" class="button slider__toggles-next" name="Следующий отзыв"></button>
               </div>
             </div>
           </div>
@@ -172,7 +169,7 @@
             <tbody class="contacts__table-wrapper">
               <tr class="contacts__item">
                 <td class="contacts__name">e-mail:</td>
-                <td class="contacts__value"><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+                <td class="contacts__value"><a class="contacts__value-link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
               <tr class="contacts__item">
                 <td class="contacts__name">адрес:</td>
                 <td class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
@@ -190,7 +187,7 @@
             <img  class="map__screenshot" src="img/map-mobile@1x.jpg" alt="Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="322" height="457">
           </picture>
           <span class="map__flag"></span>
-          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" width="768" height="457" frameborder="0"></iframe>
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" width="768" height="457"></iframe>
         </section>
         <a class=" button contacts__feedback-button contacts__feedback-button--mobile"  href="#">НАПИШИТЕ НАМ</a>
       </section>
@@ -238,10 +235,7 @@
       </div>
     </footer>
     <div class="overlay"></div>
-    <script type="text/javascript" src="js/mobile-menu.min.js"></script>
-    <script type="text/javascript" src="js/modal.min.js"></script>
-    <script  type='text/jscript' language='javascript'>
-BodyOnready();
-</script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
