@@ -113,7 +113,8 @@
   background: @seafoam-blue;
 }
 
-.order-form__radio:hover + label::before {
+.order-form__radio:hover + label::before,
+.order-form__radio:focus + label::before {
   border: 2px solid @seafoam-blue;
 }
 
@@ -159,7 +160,8 @@
   background-size: 65%;
 }
 
-.order-form__checkbox:hover + label::before {
+.order-form__checkbox:hover + label::before,
+.order-form__checkbox:focus + label::before {
   border: 2px solid @seafoam-blue;
 }
 
@@ -291,6 +293,11 @@
   border: solid 2px @greyish-brown;
 
   &:hover {
+    background-color: @greyish-brown;
+    color: white;
+  }
+
+  &:focus {
     background-color: @greyish-brown;
     color: white;
   }

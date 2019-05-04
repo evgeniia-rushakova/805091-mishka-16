@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="js/modal.js" as="script">
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" as="document" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
   </head>
   <body>
     <div style="display:none">
@@ -154,13 +156,13 @@
                 <p class="reviews__nickname">@misssssiskras</p>
               </div>
               <div class="reviews__toggles slider__toggles">
-                <button type="button" class="button slider__toggles-prev" name="Предыдущий отзыв"></button>
-                <button type="button" class="button slider__toggles-next" name="Следующий отзыв"></button>
+                <button type="button" class="button slider__toggles-prev" name="Предыдущий отзыв" aria-label="Предыдущий отзыв"></button>
+                <button type="button" class="button slider__toggles-next" name="Следующий отзыв" aria-label="Следующий отзыв"></button>
               </div>
             </div>
           </div>
         </div>
-        <a class="button reviews__toggles-send"  href="#">Написать</a>
+        <a class="button reviews__toggles-send"  href="feedback.html" aria-label="Написать нам" tabindex="0">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -175,7 +177,7 @@
                 <td class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
             </tbody>
           </table>
-          <a class=" button contacts__feedback-button contacts__feedback-button--desktop"  href="#">НАПИШИТЕ НАМ</a>
+          <a class=" button contacts__feedback-button contacts__feedback-button--desktop"  href="write-us.html">НАПИШИТЕ НАМ</a>
         </div>
         <section class="contacts__map map">
           <h3 class="visually-hidden">Как нас найти?</h3>
@@ -187,7 +189,7 @@
             <img  class="map__screenshot" src="img/map-mobile@1x.jpg" alt="Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="322" height="457">
           </picture>
           <span class="map__flag"></span>
-          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" width="768" height="457"></iframe>
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" width="768" height="457" title="Наше расположение"></iframe>
         </section>
         <a class=" button contacts__feedback-button contacts__feedback-button--mobile"  href="#">НАПИШИТЕ НАМ</a>
       </section>

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <div style="display:none">
@@ -62,16 +62,16 @@
         <h2 class="form-page__title">Вязание на заказ</h2>
       </div>
       <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
-        <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order-form__description" tabindex="0">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-type">
             <h3 class="order-form__legend order-form__legend-type">ТИП</h3>
             <div class="order-form__radio-wrapper">
               <input class="order-form__radio" type="radio" name="type" id ="accessory" value="accessory" checked>
-              <label for ="accessory" class="order-form__label">Аксессуар для
+              <label for ="accessory" class="order-form__label" tabindex="0">Аксессуар для
               интерьера</label>
               <input class="order-form__radio" type="radio" name="type" value="kids-toy" id="kids-toy">
-              <label for="kids-toy" class="order-form__label">Детская игрушка</label>
+              <label for="kids-toy" class="order-form__label" tabindex="0">Детская игрушка</label>
             </div>
           </div>
         </fieldset>
@@ -80,17 +80,17 @@
             <h3 class="order-form__legend" > Цвет</h3>
             <div class="order-form__wrapper-color">
               <input class="order-form__checkbox" type="checkbox" name="color" value="white" id = "white" checked>
-              <label for="white" class="order-form__label">Белый</label>
+              <label for="white" class="order-form__label" tabindex="0">Белый</label>
               <input class="order-form__checkbox" type="checkbox" name="color" value="grey" id="grey" checked>
-              <label for="grey" class="order-form__label">Серый</label>
+              <label for="grey" class="order-form__label" tabindex="0">Серый</label>
               <input class="order-form__checkbox" type="checkbox" name="color" value="tiffany" id="tiffany" >
-              <label for="tiffany" class="order-form__label">«Тиффани»</label>
+              <label for="tiffany" class="order-form__label" tabindex="0">«Тиффани»</label>
               <input class="order-form__checkbox" type="checkbox" name="color" value="black" id="black">
-              <label for="black" class="order-form__label">Черный</label>
+              <label for="black" class="order-form__label" tabindex="0">Черный</label>
               <input class="order-form__checkbox" type="checkbox" name="color" value="pink" id="pink">
-              <label  for="pink" class="order-form__label">Розовый</label>
+              <label  for="pink" class="order-form__label" tabindex="0">Розовый</label>
               <input class="order-form__checkbox" type="checkbox" name="color" value="orange" id="orange">
-              <label for="orange" class="order-form__label">Оранжевый</label>
+              <label for="orange" class="order-form__label" tabindex="0">Оранжевый</label>
             </div>
           </div>
         </fieldset>
@@ -119,7 +119,7 @@
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-email">
             <h3 class="order-form__legend order-form__legend-email"><label for="email">E-MAIL</label></h3>
-            <input  class="order-form__text order-form__text-email" type="text" name="email" id="email" required placeholder="Ваш Email*">
+            <input  class="order-form__text order-form__text-email" type="email" name="email" id="email" required placeholder="Ваш Email*">
             <svg class="order-form__icon-email" width="43" height="32">
               <use xlink:href="#icon-mail"></use>
             </svg>
