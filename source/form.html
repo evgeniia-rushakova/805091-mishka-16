@@ -49,11 +49,12 @@
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
-        <li class="additional-list__item"><a class="additional-list__item-link" href="#">Новые поступления</a></li>
-        <li class="additional-list__item"><a class="additional-list__item-link" href="#">Распродажа</a></li>
-        <li class="additional-list__item additional-list__item--delievery">
-          <a class="additional-list__item-link additional-list__item-link--delievery "href="#">Бесплатная доставка по России</a>
-        </li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Новые поступления</a></li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Распродажа</a></li>
+          <li class="additional-list__item additional-list__item--delievery">
+            <a class="additional-list__item-link additional-list__item-link--delievery" href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="form-page">
@@ -64,7 +65,7 @@
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-type">
-            <legend class="order-form__legend">ТИП</legend>
+            <h3 class="order-form__legend order-form__legend-type">ТИП</h3>
             <div class="order-form__radio-wrapper">
               <input class="order-form__radio" type="radio" name="type" id ="accessory" value="accessory" checked>
               <label for ="accessory" class="order-form__label">Аксессуар для
@@ -76,7 +77,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-color">
-            <legend class="order-form__legend" > Цвет</legend>
+            <h3 class="order-form__legend" > Цвет</h3>
             <div class="order-form__wrapper-color">
               <input class="order-form__checkbox" type="checkbox" name="color" value="white" id = "white" checked>
               <label for="white" class="order-form__label">Белый</label>
@@ -95,21 +96,21 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-personal">
-            <legend class="order-form__legend">ФИО</legend>
+            <h3 class="order-form__legend order-form__legend-personal">ФИО</h3>
             <div class="order-form__wrapper-personal">
-              <label class="order-form__label" for="your-name">Имя:</label>
-              <input class="order-form__text" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
-              <label class="order-form__label" for="surname">Фамилия:</label>
-              <input  class="order-form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              <label class="order-form__label" for="fathername">Отчество:</label>
-              <input  class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
+              <label class="order-form__label order-form__label-personal" for="your-name">Имя:</label>
+              <input class="order-form__text order-form__text-personal" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
+              <label class="order-form__label order-form__label-personal" for="surname">Фамилия:</label>
+              <input  class="order-form__text order-form__text-personal" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <label class="order-form__label order-form__label-personal" for="fathername">Отчество:</label>
+              <input  class="order-form__text order-form__text-personal" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
             </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-telephone">
-            <legend class="order-form__legend"><label for="phone">ТЕЛ</label></legend>
-            <input  class="order-form__text" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
+            <h3 class="order-form__legend order-form__legend-telephone"><label for="phone">ТЕЛ</label></h3>
+            <input  class="order-form__text order-form__text-telephone" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
             <svg class="order-form__icon-tel" width="25" height="24">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -117,8 +118,8 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-email">
-            <legend class="order-form__legend"><label for="email">E-MAIL</label></legend>
-            <input  class="order-form__text" type="text" name="email" id="email" required placeholder="Ваш Email*">
+            <h3 class="order-form__legend order-form__legend-email"><label for="email">E-MAIL</label></h3>
+            <input  class="order-form__text order-form__text-email" type="text" name="email" id="email" required placeholder="Ваш Email*">
             <svg class="order-form__icon-email" width="43" height="32">
               <use xlink:href="#icon-mail"></use>
             </svg>
@@ -126,8 +127,8 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__fieldset-extra">
-            <legend  class="order-form__legend"><label for="extra">ДОП</label></legend>
-            <textarea  class="order-form__textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
+            <h3  class="order-form__legend order-form__legend-extra"><label for="extra">ДОП</label></h3>
+            <textarea  class="order-form__textarea order-form__textarea-extra" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
         </fieldset>
         <div class="order-form__submit-wrapper">
@@ -178,7 +179,7 @@
         </a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/mobile-menu.min.js"></script>
-    <script type="text/javascript" src="js/modal.min.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>

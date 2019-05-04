@@ -191,29 +191,7 @@
   }
 }
 
-::-webkit-input-placeholder {
-  opacity: 0.3;
-}
-
-::-moz-placeholder {
-  opacity: 0.3;
-}
-
-
-/* Firefox 19+ */
-
-:-moz-placeholder {
-  opacity: 0.3;
-}
-
-
-/* Firefox 18- */
-
-:-ms-input-placeholder {
-  opacity: 0.3;
-}
-
-.order-form__fieldset-personal .order-form__legend {
+.order-form__legend-personal {
   margin-bottom: 30px;
 }
 
@@ -221,7 +199,7 @@
   margin-bottom: 5px;
 }
 
-.order-form__fieldset-telephone .order-form__text {
+.order-form__text-telephone {
   position: relative;
 }
 
@@ -232,12 +210,12 @@
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.order-form__fieldset-telephone .order-form__text:hover + .order-form__icon-tel,
-.order-form__fieldset-telephone .order-form__text:active + .order-form__icon-tel {
+.order-form__text-telephone:hover + .order-form__icon-tel,
+.order-form__text-telephone:active + .order-form__icon-tel {
   fill: @seafoam-blue;
 }
 
-.order-form__fieldset-telephone .order-form__legend {
+.order-form__legend-telephone {
   margin-bottom: 6px;
 }
 
@@ -245,7 +223,7 @@
   margin-bottom: 5px;
 }
 
-.order-form__fieldset-email .order-form__text {
+.order-form__text-email {
   position: relative;
 }
 
@@ -256,16 +234,16 @@
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.order-form__fieldset-email .order-form__text:hover + .order-form__icon-email,
-.order-form__fieldset-email .order-form__text:active + .order-form__icon-email {
+.order-form__text-email:hover + .order-form__icon-email,
+.order-form__text-email:active + .order-form__icon-email {
   fill: @seafoam-blue;
 }
 
-.order-form__fieldset-email .order-form__legend {
+.order-form__legend-email {
   margin-bottom: 11px;
 }
 
-.order-form__fieldset-extra .order-form__legend {
+.order-form__legend-extra {
   margin-bottom: 25px;
 }
 
@@ -452,16 +430,16 @@
     max-width: 500px;
   }
 
-  .order-form__fieldset-personal .order-form__legend {
+  .order-form__legend-personal {
     margin-right: 100px;
   }
 
-  .order-form__wrapper-personal .order-form__label {
+  .order-form__label-personal {
     margin-right: 26px;
     padding-top: 3px;
   }
 
-  .order-form__wrapper-personal .order-form__text {
+  .order-form__text-personal {
     flex-grow: 1;
     min-width: 350px;
     max-width: 428px;
@@ -487,11 +465,11 @@
     right: 76px;
   }
 
-  .order-form__fieldset-telephone .order-form__legend {
+  .order-form__legend-telephone {
     padding-top: 21px;
   }
 
-  .order-form__fieldset-telephone .order-form__text {
+  .order-form__text-telephone {
     flex-basis: 485px;
     background-color: @light-grey;
     font-size: 19px;
@@ -515,11 +493,11 @@
     right: 66px;
   }
 
-  .order-form__fieldset-email .order-form__legend {
+  .order-form__legend-email {
     padding-top: 19px;
   }
 
-  .order-form__fieldset-email .order-form__text {
+  .order-form__text-email {
     flex-basis: 485px;
     background-color: @light-grey;
     font-size: 19px;
@@ -536,7 +514,7 @@
     margin-bottom: 40px;
   }
 
-  .order-form__fieldset-extra .order-form__legend {
+  .order-form__legend-extra {
     padding-top: 16px;
   }
 
@@ -584,7 +562,7 @@
     justify-content: flex-start;
   }
 
-  .order-form__fieldset-type .order-form__legend {
+  .order-form__legend-type {
     padding-right: 74px;
     padding-top: 5px;
   }
@@ -602,7 +580,7 @@
     padding-right: 225px;
   }
 
-  .order-form__fieldset-personal .order-form__legend {
+  .order-form__legend-personal {
     padding-top: 5px;
     margin-right: 45px;
   }
@@ -611,7 +589,7 @@
     max-width: 700px;
   }
 
-  .order-form__wrapper-personal .order-form__text {
+  .order-form__text-personal {
     min-width: 558px;
     max-width: 609px;
   }
@@ -626,11 +604,11 @@
     right: 235px;
   }
 
-  .order-form__fieldset-telephone .order-form__legend {
+  .order-form__legend-telephone {
     margin-right: 57px;
   }
 
-  .order-form__fieldset-telephone .order-form__text {
+  .order-form__text-telephone {
     min-width: 685px;
   }
 
@@ -644,11 +622,11 @@
     right: 223px;
   }
 
-  .order-form__fieldset-email .order-form__legend {
+  .order-form__legend-email {
     margin-right: 30px;
   }
 
-  .order-form__fieldset-email .order-form__text {
+  .order-form__text-email {
     min-width: 685px;
   }
 
@@ -658,11 +636,11 @@
     justify-content: flex-start;
   }
 
-  .order-form__fieldset-extra .order-form__legend {
+  .order-form__legend-extra {
     margin-right: 51px;
   }
 
-  .order-form__fieldset-extra .order-form__textarea {
+  .order-form__textarea-extra {
     min-width: 680px;
   }
 
