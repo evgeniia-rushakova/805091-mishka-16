@@ -189,16 +189,16 @@
   .main-nav__mobile-wrapper {
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid #ececec;
     border-left: 1px solid #ececec;
     width: 350px;
+    max-height: 88px;
   }
 
   .main-nav__mobile-wrapper::after {
     content: "";
     position: absolute;
     width: 400px;
-    height: 1px;
+    height: 0.5px;
     background-color: #ececec;
     bottom: -1px;
     left: 0;
@@ -253,6 +253,7 @@
     border: 1px solid #ececec;
     border-top: none;
     max-width: 395px;
+    max-height: 88px;
   }
 
   .user-list__item {
@@ -288,10 +289,7 @@
   }
 
   .user-list__bucket {
-    padding-right: 50px;
-    padding-left: 83px;
-    padding-top: 30px;
-    padding-bottom: 34px;
+    padding: 30px 50px 35px 83px;
     max-width: 313px;
     border-left: 1px solid #ececec;
   }
@@ -312,7 +310,7 @@
 
   .main-nav__mobile-wrapper::after {
     left: -41px;
-    bottom: 0;
+    bottom: -1px;
   }
 
   .page-header__logo {

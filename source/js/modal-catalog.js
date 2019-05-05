@@ -1,14 +1,14 @@
-      var modal = document.querySelector('.modal');
-      var buttons = document.querySelectorAll('.main-catalog__item__button');
-      var overlay = document.querySelector('.overlay');
-      for (var i=0; i <= buttons.length; i++){
+      var modal = document.querySelector(".modal");
+      var buttons = document.querySelectorAll(".main-catalog__item-button");
+      var overlay = document.querySelector(".overlay");
+      for (var i=0; i <= buttons.length-1; i++){
       var button = buttons[i];
       button.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.add("modal-show");
       overlay.classList.add("overlay-show");
       });
-      var addButton = modal.querySelector('.modal__add');
+      var addButton = modal.querySelector(".modal__add");
       addButton.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.remove("modal-show");
