@@ -18,20 +18,50 @@
   width: 67px;
 }
 
+.map__interactive {
+  display: none;
+  border: 0;
+}
+
 @media (min-width: @tablet-width) {
   .map {
+    margin: 0 auto;
+    padding: 0;
     margin-bottom: 71px;
+    width: 768px;
+    height: 457px;
+    position: relative;
   }
 
   .map__screenshot {
     width: 768px;
-    height: auto;
+    height: 457px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .map__interactive {
+    display: block;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 768px;
+    height: 457px;
+    z-index: 2;
+  }
+
+  .map__flag {
+    position: absolute;
+    z-index: 2;
+    top: 139px;
+    left: 363px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
-    order: 4;
+    order: 2;
   }
 
   .map__screenshot {
@@ -40,8 +70,12 @@
     height: 457px;
   }
 
+  .map__interactive {
+    width: 525px;
+    height: 457px;
+  }
+
   .map__flag {
-    top: -318px;
     left: 246px;
   }
 }

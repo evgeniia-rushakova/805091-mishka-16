@@ -3,6 +3,22 @@
   margin-right: 30px;
   margin-bottom: 57px;
   border: 1px solid #ececec;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.production-process__icon-video {
+  fill: @seafoam-blue;
+  position: absolute;
+  top: 25px;
+  left: 33px;
 }
 
 .production-process__title {
@@ -20,12 +36,23 @@
   position: relative;
 }
 
-.production-process__button__video {
+.production-process__button-video {
   position: relative;
   top: -122px;
   left: 72px;
   border: none;
   background-color: transparent;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.05s;
+  }
+
+  &:active {
+    transform: scale(0.8);
+    transition: 0.05s;
+    opacity: 0.8;
+  }
 }
 
 .production-process__description {
@@ -37,7 +64,7 @@
   padding-right: 35px;
 }
 
-.production-process__button__buy {
+.production-process__button-buy {
   .bold;
   display: block;
   margin-left: 33px;
@@ -46,6 +73,15 @@
   text-transform: uppercase;
   border: 2px solid @greyish-brown;
   margin-bottom: 33px;
+
+  &:hover {
+    background-color: @greyish-brown;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -55,6 +91,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 63px;
+  }
+
+  .production-process__icon-video {
+    top: 486px;
+    left: 41px;
   }
 
   .production-process__title {
@@ -78,7 +119,7 @@
     height: 455px;
   }
 
-  .production-process__button__video {
+  .production-process__button-video {
     top: -271px;
     left: 282px;
     margin-bottom: 46px;
@@ -98,7 +139,7 @@
     line-height: 30px;
   }
 
-  .production-process__button__buy {
+  .production-process__button-buy {
     order: 4;
     text-align: center;
     margin-left: 40px;
@@ -117,6 +158,11 @@
     padding: 0;
   }
 
+  .production-process__icon-video {
+    top: 46px;
+    left: 761px;
+  }
+
   .production-process {
     flex-direction: row;
     margin-bottom: 106px;
@@ -133,7 +179,7 @@
     margin-bottom: 47px;
   }
 
-  .production-process__button__buy {
+  .production-process__button-buy {
     margin: 0;
   }
 }

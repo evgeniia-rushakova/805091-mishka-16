@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened main-nav__mobile-wrapper--no-js">
+        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened">
           <a  href= "index.html" class="page-header__logo">
             <picture>
               <source media ="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -22,26 +28,33 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item__link" href="catalog.html">Каталог товаров</a>
+            <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a  class="site-list__item__link" href="form.html">Вязание на заказ</a>
+            <a  class="site-list__item-link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__item__link user-list__search" href="#">Поиск по сайту</a>
+            <svg class="user-list__search-image" width="18" height="18">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            <a class="user-list__item-link user-list__search" href="#">Поиск по сайту</a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__item__link user-list__bucket" href="#">Корзина: пока пуста</a>
+            <svg class="user-list__bucket-image" width="21" height="18">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            <a class="user-list__item-link user-list__bucket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
-        <li class="additional-list__item"><a class="additional-list__item__link" href="#">Новые поступления</a></li>
-        <li class="additional-list__item"><a class="additional-list__item__link" href="#">Распродажа</a></li>
-        <li class="additional-list__item additional-list__item--delievery">
-          <a class="additional-list__item__link additional-list__item__link--delievery "href="#">Бесплатная доставка по России</a>
-        </li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Новые поступления</a></li>
+          <li class="additional-list__item"><a class="additional-list__item-link" href="#">Распродажа</a></li>
+          <li class="additional-list__item additional-list__item--delievery">
+            <a class="additional-list__item-link additional-list__item-link--delievery" href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="form-page">
@@ -51,8 +64,8 @@
       <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--type">
-            <legend class="order-form__legend">ТИП</legend>
+          <div class="order-form__fieldset-type">
+            <h3 class="order-form__legend order-form__legend-type">ТИП</h3>
             <div class="order-form__radio-wrapper">
               <input class="order-form__radio" type="radio" name="type" id ="accessory" value="accessory" checked>
               <label for ="accessory" class="order-form__label">Аксессуар для
@@ -63,8 +76,8 @@
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--color">
-            <legend class="order-form__legend" > Цвет</legend>
+          <div class="order-form__fieldset-color">
+            <h3 class="order-form__legend" > Цвет</h3>
             <div class="order-form__wrapper-color">
               <input class="order-form__checkbox" type="checkbox" name="color" value="white" id = "white" checked>
               <label for="white" class="order-form__label">Белый</label>
@@ -82,34 +95,40 @@
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--personal">
-            <legend class="order-form__legend">ФИО</legend>
+          <div class="order-form__fieldset-personal">
+            <h3 class="order-form__legend order-form__legend-personal">ФИО</h3>
             <div class="order-form__wrapper-personal">
-              <label class="order-form__label" for="your-name">Имя:</label>
-              <input class="order-form__text" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
-              <label class="order-form__label" for="surname">Фамилия:</label>
-              <input  class="order-form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              <label class="order-form__label" for="fathername">Отчество:</label>
-              <input  class="order-form__text" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
+              <label class="order-form__label order-form__label-personal" for="your-name">Имя:</label>
+              <input class="order-form__text order-form__text-personal" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
+              <label class="order-form__label order-form__label-personal" for="surname">Фамилия:</label>
+              <input  class="order-form__text order-form__text-personal" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <label class="order-form__label order-form__label-personal" for="fathername">Отчество:</label>
+              <input  class="order-form__text order-form__text-personal" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
             </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--telephone">
-            <legend class="order-form__legend"><label for="phone">ТЕЛ</label></legend>
-            <input  class="order-form__text" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
+          <div class="order-form__fieldset-telephone">
+            <h3 class="order-form__legend order-form__legend-telephone"><label for="phone">ТЕЛ</label></h3>
+            <input  class="order-form__text order-form__text-telephone" type="tel" name="phone" id="phone" required placeholder="+7 XXX XXX XX XX*">
+            <svg class="order-form__icon-tel" width="25" height="24">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--email">
-            <legend class="order-form__legend"><label for="email">E-MAIL</label></legend>
-            <input  class="order-form__text" type="text" name="email" id="email" required placeholder="Ваш Email*">
+          <div class="order-form__fieldset-email">
+            <h3 class="order-form__legend order-form__legend-email"><label for="email">E-MAIL</label></h3>
+            <input  class="order-form__text order-form__text-email" type="text" name="email" id="email" required placeholder="Ваш Email*">
+            <svg class="order-form__icon-email" width="43" height="32">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset">
-          <div class="order-form__fieldset--extra">
-            <legend  class="order-form__legend"><label for="extra">ДОП</label></legend>
-            <textarea  class="order-form__textarea" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
+          <div class="order-form__fieldset-extra">
+            <h3  class="order-form__legend order-form__legend-extra"><label for="extra">ДОП</label></h3>
+            <textarea  class="order-form__textarea order-form__textarea-extra" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
         </fieldset>
         <div class="order-form__submit-wrapper">
@@ -120,40 +139,47 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
+        <a href="index.html" title="Интернет-магазин «Мишка»">
+          <svg aria-hidden="false" class="page-footer__logo-image" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+            <a href="#" title="Мы в Инстаграм">
+              <svg aria-hidden="false" class="social__icon-instagram" width="22" height="21">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+            <a href="#" title="Мы в Facebook">
+              <svg aria-hidden="false" class="social__icon-facebook" width="15" height="28">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+            <a href="#" title="Мы в Twitter">
+              <svg aria-hidden="false" class="social__icon-twitter" width="23" height="20">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__img" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="copyright__text">Разработано</b>
+          <svg aria-hidden="false" class="copyright__img" width="27" height="34">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav__mobile-wrapper');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav__mobile-wrapper--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav__mobile-wrapper--closed')) {
-          navMain.classList.remove('main-nav__mobile-wrapper--closed');
-          navMain.classList.add('main-nav__mobile-wrapper--opened');
-        } else {
-          navMain.classList.add('main-nav__mobile-wrapper--closed');
-          navMain.classList.remove('main-nav__mobile-wrapper--opened');
-        }
-      });
-    </script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
