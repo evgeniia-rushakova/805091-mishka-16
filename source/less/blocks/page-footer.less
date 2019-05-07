@@ -11,6 +11,20 @@
   display: none;
 }
 
+.page-footer__social {
+  position: relative;
+}
+
+.page-footer__social::after {
+  content: "";
+  position: absolute;
+  bottom: 31px;
+  left: 30px;
+  width: 260px;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
 .social__list {
   list-style: none;
   display: flex;
@@ -113,7 +127,7 @@
   .page-footer__logo {
     display: block;
     margin-right: 125px;
-    padding: 10px 0 0 50px;
+    padding: 12px 0 0 50px;
   }
 
   .page-footer__logo-image {
@@ -127,16 +141,20 @@
     }
   }
 
+  .page-footer__social::after {
+    display: none;
+  }
+
   .social__list {
     margin: 0;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 18px;
     min-width: 142px;
   }
 
   .page-footer__copyright {
     margin: 0;
-    padding: 20px 49px 0;
+    padding: 25px 52px 0;
   }
 }
 

@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.benefits__item--flower {
+  max-width: 180px;
+}
+
 .benefits__item--flower::before {
   content: "";
   position: absolute;
@@ -33,6 +37,10 @@
   background-repeat: no-repeat;
 }
 
+.benefits__item--money {
+  max-width: 200px;
+}
+
 .benefits__item--money::before {
   content: "";
   position: absolute;
@@ -42,6 +50,10 @@
   height: 27px;
   background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
+}
+
+.benefits__item--like {
+  max-width: 200px;
 }
 
 .benefits__item--like::before {
@@ -141,6 +153,7 @@
   .benefits__item--like {
     order: 5;
     max-width: 235px;
+    margin-bottom: 0;
   }
 
   .benefits__item--like::before {

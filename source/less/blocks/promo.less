@@ -4,11 +4,24 @@
   padding-right: 30px;
 }
 
+.promo::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 7px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat-x: repeat;
+  background-repeat: repeat-x;//Firefox
+  background-repeat-y: no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
 .promo__title {
   .title-font;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .promo__card {
@@ -36,7 +49,7 @@
 }
 
 .features-list {
-  margin-bottom: 17px;
+  margin-bottom: 24px;
   border-collapse: collapse;
 }
 
@@ -48,8 +61,8 @@
 .feature-item__name {
   .general-font;
   line-height: 20px;
-  padding-right: 23px;
-  padding-bottom: 14px;
+  padding-right: 27px;
+  padding-bottom: 15px;
   padding-top: 4px;
 }
 
@@ -61,11 +74,15 @@
 }
 
 .promo__photo {
-  margin-bottom: 25px;
+  margin-bottom: 11px;
   order: 2;
 }
 
 .promo__order-wrapper {
+  display: none;
+}
+
+.promo__order-wrapper--mobile {
   order: 3;
 }
 
@@ -147,10 +164,19 @@
     margin-top: 19px;
   }
 
+  .promo__order-wrapper--mobile {
+    display: none;
+  }
+
+  .features-list {
+    margin-bottom: 53px;
+  }
+
   .promo__order-wrapper {
+    display: block;
     order: 3;
     padding-left: 4px;
-    margin-top: -122px;
+    //margin-top: -122px;
   }
 
   .promo__price {
@@ -223,7 +249,7 @@
   }
 
   .promo__order-wrapper {
-    margin-top: -135px;
-    padding-left: 180px;
+    //margin-top: -135px;
+    //padding-left: 180px;
   }
 }

@@ -8,7 +8,7 @@
     <link rel="preload" href="js/modal-catalog.js" as="script">
     <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
   </head>
@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened">
-          <a href="index.html" aria-label="На главную страницу"class="page-header__logo">
+          <a href="index.html" aria-label="На главную страницу" class="page-header__logo">
             <picture>
               <source media ="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -82,11 +82,11 @@
             </div>
             <div class="main-catalog__item-price-wrapper">
               <b class="main-catalog__item-price">1 200 руб.</b>
-              <button class="main-catalog__item-button" title="В корзину">
+              <a class="main-catalog__item-button" title="В корзину" href="modal.html">
                 <svg class="main-catalog__item-button-image" width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -107,11 +107,11 @@
             </div>
             <div class="main-catalog__item-price-wrapper">
               <b class="main-catalog__item-price">690 руб.</b>
-              <button class="main-catalog__item-button" title="В корзину">
+              <a class="main-catalog__item-button" title="В корзину" href="modal.html">
                 <svg class="main-catalog__item-button-image" width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -132,10 +132,11 @@
             </div>
             <div class="main-catalog__item-price-wrapper">
               <b class="main-catalog__item-price">1 500 руб.</b>
-              <button class="main-catalog__item-button" title="В корзину">
+              <a class="main-catalog__item-button" title="В корзину" href="modal.html">
                 <svg class="main-catalog__item-button-image" width="20" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -156,6 +157,7 @@
         </section>
       </section>
       <section class="production-process">
+        <div class="production-process__wrapper">
         <svg class="production-process__icon-video" width="32" height="32">
           <use xlink:href="#icon-video"></use>
         </svg>
@@ -179,8 +181,9 @@
           <p class="production-process__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <a class="button production-process__button-buy" tabindex="0" aria-hidden="Сделать заказ">Сделать заказ</a>
+          <a class="button production-process__button-buy" tabindex="0" href="buy.html">Сделать заказ</a>
         </div>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
