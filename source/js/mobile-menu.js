@@ -14,4 +14,3 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav__mobile-wrapper--opened');
   }
 });
-

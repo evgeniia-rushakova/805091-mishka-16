@@ -98,12 +98,15 @@
           <div class="order-form__fieldset-personal">
             <h3 class="order-form__legend order-form__legend-personal">ФИО</h3>
             <div class="order-form__wrapper-personal">
+              <div class="order-form__ie-wrapper">
               <label class="order-form__label order-form__label-personal" for="your-name">Имя:</label>
-              <input class="order-form__text order-form__text-personal" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name">
+              <input class="order-form__text order-form__text-personal order-form__text-personal--name" type="text" name="name" placeholder="Введите ваше имя*" required id="your-name"></div>
+              <div class="order-form__ie-wrapper">
               <label class="order-form__label order-form__label-personal" for="surname">Фамилия:</label>
-              <input  class="order-form__text order-form__text-personal" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              <input  class="order-form__text order-form__text-personal" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required></div>
+              <div class="order-form__ie-wrapper">
               <label class="order-form__label order-form__label-personal" for="fathername">Отчество:</label>
-              <input  class="order-form__text order-form__text-personal" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" >
+              <input  class="order-form__text order-form__text-personal" type="text" name="fathername" id="fathername" placeholder="Отчество, если желаете" ></div>
             </div>
           </div>
         </fieldset>
@@ -181,5 +184,6 @@
     </footer>
     <script src="js/mobile-menu.min.js"></script>
     <script src="js/modal.min.js"></script>
+    <script async="js/picturefill.min.js"></script>
   </body>
 </html>

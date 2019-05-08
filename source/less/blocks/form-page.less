@@ -313,6 +313,7 @@
   padding: 15px 40px;
   background-color: white;
   border: solid 2px @greyish-brown;
+  white-space: pre;
 
   &:hover {
     background-color: @greyish-brown;
@@ -491,6 +492,16 @@
     margin-bottom: 34px;
   }
 
+  .order-form__text-personal--name {
+    min-width: 400px;
+  }
+
+  .order-form__ie-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .order-form__fieldset-telephone {
     padding-left: 52px;
     padding-top: 45px;
@@ -634,6 +645,10 @@
   .order-form__text-personal {
     min-width: 558px;
     max-width: 609px;
+  }
+
+  .order-form__text-personal--name {
+    min-width: 606px;
   }
 
   .order-form__fieldset-telephone {
