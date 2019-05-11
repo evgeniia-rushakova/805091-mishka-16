@@ -10,6 +10,7 @@
     <link rel="preload" href="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" as="object" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="js/webpjs.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -17,7 +18,7 @@
     </div>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened">
+        <div class="main-nav__mobile-wrapper main-nav__mobile-wrapper--opened main-nav__mobile-wrapper--no-js">
           <a class="page-header__logo">
             <picture>
               <source media ="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -96,18 +97,14 @@
             </table>
             <div class="promo__order-wrapper">
               <p class="promo__price">Цена: 990 руб.</p>
-              <button class="button promo__buy">ЗАКАЗАТЬ</button>
+              <a href="promo-week.html" class="button promo__buy">ЗАКАЗАТЬ</a>
             </div>
           </div>
-          <div class="promo__order-wrapper--mobile">
-            <p class="promo__price">Цена: 990 руб.</p>
-            <button class="button promo__buy">ЗАКАЗАТЬ</button>
-          </div>
           <picture class="promo__photo">
-            <!--<source media ="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source media ="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">-->
+            <source media ="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source media ="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="promo__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" width="260" height="315" alt="Примеры корзинок">
           </picture>
         </div>
@@ -180,7 +177,7 @@
                 <td class="contacts__value contacts__value--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tbody>
           </table>
-          <a class=" button contacts__feedback-button contacts__feedback-button--desktop"  href="write-us.html">НАПИШИТЕ НАМ</a>
+          <a class=" button contacts__feedback-button"  href="write-to-us.html">НАПИШИТЕ НАМ</a>
         </div>
         <section class="contacts__map map">
           <h3 class="visually-hidden">Как нас найти?</h3>
@@ -194,7 +191,6 @@
           <span class="map__flag"></span>
           <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b01ea4adc19a9bac4c972cd9b5e980ae16fa09d4b08282d01d32e3b46337a37&amp;source=constructor" width="768" height="457" title="Наше расположение"></iframe>
         </section>
-        <a class=" button contacts__feedback-button contacts__feedback-button--mobile"  href="write-to-us.html">НАПИШИТЕ НАМ</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -242,7 +238,5 @@
     <div class="overlay"></div>
     <script src="js/mobile-menu.min.js"></script>
     <script src="js/modal.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/webpjs.min.js"></script>
   </body>
 </html>

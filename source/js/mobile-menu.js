@@ -1,6 +1,7 @@
 var navMain = document.querySelector('.main-nav__mobile-wrapper');
 var navToggle = document.querySelector('.main-nav__toggle');
 
+navMain.classList.remove('main-nav__mobile-wrapper--no-js');
 navMain.classList.remove('main-nav__mobile-wrapper--opened');
 navMain.classList.add('main-nav__mobile-wrapper--closed');
 

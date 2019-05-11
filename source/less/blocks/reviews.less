@@ -129,14 +129,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 46px;
+    position: relative;
+  }
+
+  .reviews::before {
+    position: absolute;
+    content: "";
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
-    position: relative;
+    background-color: @light-grey;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 457px;
+    z-index: -1;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-size: 350px auto;
     }
   }
 
@@ -210,7 +220,10 @@
     padding-left: 221px;
     margin-bottom: 100px;
     padding-top: 71px;
-    background-position: 50px 0;
+  }
+
+  .reviews::before {
+    left: 50px;
   }
 
   .reviews::after {

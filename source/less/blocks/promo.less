@@ -27,6 +27,7 @@
 .promo__card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 136px;
 }
 
 .promo__info {
@@ -78,20 +79,18 @@
   order: 2;
 }
 
-.promo__order-wrapper {
-  display: none;
-}
-
-.promo__order-wrapper--mobile {
-  order: 3;
-}
-
 .promo__price {
   .bold;
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 43px;
+}
+
+.promo__order-wrapper {
+  position: absolute;
+  bottom: -87px;
+  left: 30px;
 }
 
 .promo__buy {
@@ -101,6 +100,7 @@
   background-color: white;
   border: solid 2px @greyish-brown;
   margin-bottom: 35px;
+  text-decoration: none;
 
   &:hover {
     background-color: @greyish-brown;
@@ -130,7 +130,7 @@
     background-repeat: repeat-x;//Firefox
     background-repeat-y: no-repeat;
     background-size: 100%;
-    bottom: -47px;
+    bottom: -86px;
     left: 0;
   }
 
@@ -150,6 +150,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .promo__info {
@@ -164,10 +165,6 @@
     margin-top: 19px;
   }
 
-  .promo__order-wrapper--mobile {
-    display: none;
-  }
-
   .features-list {
     margin-bottom: 53px;
   }
@@ -176,13 +173,13 @@
     display: block;
     order: 3;
     padding-left: 4px;
-    //margin-top: -122px;
+    position: inherit;
   }
 
   .promo__price {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 
   .promo__buy {
@@ -208,7 +205,7 @@
     margin-left: 50px;
     margin-right: 50px;
     background-size: 100%;
-    bottom: -69px;
+    bottom: -95px;
   }
 
   .promo__title-wrapper {
